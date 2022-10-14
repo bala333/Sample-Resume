@@ -1,0 +1,40 @@
+.feedback {
+  @extend %grid-center;
+  grid-column: center-start/col-end 3;
+  padding: 4rem 0;
+  border-bottom: 1px solid $color-grey-light-1;
+  @media only screen and (max-width: $bp-medium-small) {
+    grid-column: center-start/center-end;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  &__details {
+    padding: 2rem 4rem;
+    padding-left: 5.5rem;
+    grid-column: col-start 4 / col-end 10;
+    border-bottom: 1px solid $color-grey-light-1;
+    @media only screen and (max-width: $bp-medium-small) {
+      grid-column: center-start/center-end;
+      padding-left: 0;
+      padding: 2rem 0;
+    }
+  }
+  &__img {
+    width: 5rem;
+    border-radius: 3px;
+  }
+  &__user {
+    grid-template-columns: min-content 1fr;
+    display: grid;
+    grid-column-gap: 3rem;
+    padding: 2rem 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-grey-light-1;
+    }
+  }
+  &__heading {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-column-gap: 1rem;
+  }
+}

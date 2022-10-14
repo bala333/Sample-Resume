@@ -1,0 +1,62 @@
+.profile {
+  margin-top: 8rem;
+  grid-column: center-start / col-end 5;
+  padding-top: 4rem;
+  padding-right: 1rem;
+  border-bottom: 1px solid $color-grey-light-1;
+  padding-bottom: 4rem;
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: center-start / center-end;
+    margin-top: 0;
+    padding-right: 0;
+  }
+  &__details {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    span {
+      font-size: 1.4rem;
+      margin-left: 2rem;
+      opacity: 0.8;
+    }
+  }
+
+  &__photo {
+    grid-column: col-start 6 / center-end;
+    padding-top: 4rem;
+    border-bottom: 1px solid $color-grey-light-1;
+    padding-bottom: 3rem;
+    margin-top: 8rem;
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: center-start / center-end;
+      border-bottom: none;
+      grid-row: 1/2;
+    }
+  }
+  &__img {
+    width: 90%;
+    height: 90%;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 80%;
+      height: 80%;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      width: 90%;
+      height: 60rem;
+    }
+    @media only screen and (max-width: $bp-medium-small) {
+      width: 100%;
+      height: 30rem;
+    }
+  }
+}
+.social__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+.icon {
+  margin-left: 2rem;
+}

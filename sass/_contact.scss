@@ -1,0 +1,56 @@
+.contact {
+  &__info {
+    grid-column: col-start 4 / col-end 6;
+    padding-left: 5rem;
+
+    padding-top: 4rem;
+    @media only screen and (max-width: $bp-medium-small) {
+      grid-column: center-start/center-end;
+      padding-left: 0;
+    }
+  }
+  &__msg {
+    grid-column: col-start 7 / col-end 10;
+    padding-top: 4rem;
+    display: grid;
+    grid-template-rows: min-content min-content;
+    @media only screen and (max-width: $bp-medium-small) {
+      grid-column: center-start/center-end;
+    }
+  }
+  &__name,
+  &__mail,
+  &__msg-text {
+    font-size: 1.4rem;
+    padding: 1.5rem 2rem;
+    width: 90%;
+    border: 2px solid $color-grey-light-1;
+    border-radius: 2px;
+    @media only screen and (max-width: $bp-medium-small) {
+      width: 100%;
+    }
+    &:hover,
+    &:focus {
+      outline: 2px solid $color-secondary;
+      border: 2px solid transparent;
+    }
+    &::-webkit-input-placeholder {
+      opacity: 0.8;
+    }
+  }
+  &__msg-text {
+    width: 100%;
+  }
+}
+.contacts {
+  grid-column: center-start/col-end 3;
+  &:not(:last-child) {
+    padding-top: 4rem;
+  }
+  @media only screen and (max-width: $bp-medium-small) {
+    grid-column: center-start/center-end;
+  }
+}
+.cta {
+  justify-self: end;
+}

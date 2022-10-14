@@ -1,0 +1,15 @@
+.skills {
+  @extend %grid-center;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-column-gap: 4rem;
+  grid-row-gap: 3rem;
+  padding: 4rem 0;
+  border-bottom: 1px solid $color-grey-light-2;
+}
+.para__text {
+  font-family: $font-lato;
+  font-size: 1.6rem;
+  opacity: 0.8;
+}

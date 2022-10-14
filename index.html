@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Danny - Web developer resume</title>
+  </head>
+  <body class="containers">
+    <!-- <header class="header">
+      <h2 class="heading-2 header__name">Danny</h2>
+      <ul class="menu">
+        <li class="menu__list"><a href="#" class="menu__link">Hello</a></li>
+        <li class="menu__list">
+          <a href="#skill" class="menu__link">skills</a>
+        </li>
+        <li class="menu__list">
+          <a href="#experience" class="menu__link">experience</a>
+        </li>
+        <li class="menu__list">
+          <a href="#education" class="menu__link">education</a>
+        </li>
+        <li class="menu__list">
+          <a href="#portfolio" class="menu__link">portfolio</a>
+        </li>
+        <li class="menu__list">
+          <a href="#feedback" class="menu__link">feedback</a>
+        </li>
+        <li class="menu__list">
+          <a href="#contact" class="menu__link">contact me</a>
+        </li>
+      </ul>
+    </header> -->
+
+     <nav class="navbar navbar-expand-lg bg-light header">
+      <div class="container-fluid">
+        <h2 class="heading-2 header__name">Danny</h2>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item menu__list">
+              <a class="nav-link menu__link" href="#">Hello</a>
+            </li>
+            <li class="nav-item menu__list">
+              <a class="nav-link menu__link" href="#skill">skills</a>
+            </li>
+            <li class="nav-item menu__list">
+              <a class="nav-link menu__link" href="#experience">experience</a>
+            </li>
+            <li class="nav-item menu__list">
+              <a class="nav-link menu__link" href="#education">Education</a>
+            </li>
+            <li class="nav-item menu__list">
+              <a class="nav-link menu__link" href="#portfolio">portfolio</a>
+            </li>
+            <li class="nav-item menu__list">
+              <a class="nav-link menu__link" href="#feedback">feedback</a>
+            </li>
+            <li class="nav-item menu__list">
+              <a class="nav-link menu__link" href="#contact">contact me</a>
+            </li>
+          </ul>          
+        </div>
+      </div>
+    </nav>
+
+    
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+
+    <div class="profile">
+      <h1 class="heading-1 blue__dot">I am Danny Falcon</h1>
+      <p class="para__text mb-largest">
+        I am a Web Developer located in Hartford, Connecticut. I currently work
+        as a part time Remote Junior Web Developer for Coolor, located in Las
+        Vegas. I am looking to take on more work and to increase my skills as a
+        Web Developer.
+      </p>
+      <div class="profile__details mb-small">
+        <h5 class="heading-5">Phone</h5>
+        <span>+1-203-324-5400</span>
+      </div>
+      <div class="profile__details mb-small">
+        <h5 class="heading-5">Email</h5>
+        <span>dannycrazydev@gmail.com</span>
+      </div>
+      <div class="profile__details mb-small">
+        <h5 class="heading-5">Address</h5>
+        <span>3113 Lochmere Lane, Hartford, CA 06103</span>
+      </div>
+      <div class="profile__details mb-largest">
+        <h5 class="heading-5">social</h5>
+        <div class="icon">
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+          </svg>
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+          </svg>
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+          </svg>
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+          </svg>
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#icon-behance"></use>
+          </svg>
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#icon-dribbble"></use>
+          </svg>
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#icon-mixi"></use>
+          </svg>
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
+          </svg>
+        </div>
+      </div>
+      <button class="btn btn__blue">contact me</button>
+      <button class="btn btn__white">download cv</button>
+    </div>
+    <div class="profile__photo">
+      <img class="profile__img" src="img/photo.jpg" alt="photo" />
+    </div>
+    <section class="skills" id="skill">
+      <div class="skill">
+        <h2 class="heading-2 blue__dot">Skills</h2>
+        <p class="para__text">
+          I am inspired by creating great work with people who are as passionate
+          as I am about building something awesome.
+        </p>
+      </div>
+      <div class="skill">
+        <h2 class="heading-3">Web Development</h2>
+        <p class="para__text">
+          Javascript, Coffeescript, JAVA, Python, PHP, Go, Node.js, MongoDB,
+          Redis, PostgreSQL, WebStorm.
+        </p>
+      </div>
+      <div class="skill">
+        <h2 class="heading-3">UI\UX Design</h2>
+        <p class="para__text">
+          Photoshop, Illustrator, Sketch, Axure, XMind, Prototyping,
+          Wireframing, User Research, Usability Testing.
+        </p>
+      </div>
+      <div class="skill">
+        <img src="img/zig-zag.svg" alt="Zig-zag" class="zig__zag zig__zag-1" />
+        <!-- <div class="zig-zag"></div> -->
+      </div>
+      <div class="skill">
+        <h2 class="heading-3">Frontend Development</h2>
+        <p class="para__text">
+          HTML, CSS, LESS, SASS, Bootstrap, Wordpress, Drupal, Phonegap /
+          Cordova, Ionic, Foundation, Angular.js.
+        </p>
+      </div>
+      <div class="skill">
+        <h2 class="heading-3">Consulting & SEO Audit</h2>
+        <p class="para__text">
+          Screaming Frog, Woorank, Raventools, Semrush, Moz, WebCEO, Google
+          Analytics, ChartBeat, CrazyEgg.
+        </p>
+      </div>
+    </section>
+    <div class="learn" id="experience">
+      <div class="learns">
+        <h2 class="heading-2 blue__dot">Experience</h2>
+        <p class="para__text">
+          I partner with startups, organizations and Fortune 500 companies to
+          build digital products that help clients overcome challenges and
+          create lasting connections with millions of people every day.
+        </p>
+      </div>
+      <div class="learns">
+        <img src="img/zig-zag.svg" alt="Zig-zag" class="zig__zag zig__zag-1" />
+      </div>
+    </div>
+    <div class="learn__details">
+      <div class="learn__company">
+        <div class="learn__head">
+          <h3 class="heading-3">Web developer</h3>
+          <p class="para__text">Coolor Studio</p>
+        </div>
+        <h4 class="heading-4">May, 2014 — Present</h4>
+        <p class="para__text">
+          Designed and developed user-friendly website, including optimized
+          check-out page that increased user clicks, and subsequently customer
+          purchases by 20%.
+        </p>
+      </div>
+      <div class="learn__company">
+        <div class="learn__head">
+          <h3 class="heading-3">Middle Frontend Developer</h3>
+          <p class="para__text">Illskill Agency</p>
+        </div>
+        <h4 class="heading-4">Jan, 2013 — May, 2014</h4>
+        <p class="para__text">
+          Leading a small team on a variety of development projects and
+          delivering solutions to meet and exceed clients’ briefs.
+        </p>
+      </div>
+      <div class="learn__company">
+        <div class="learn__head">
+          <h3 class="heading-3">IT Specialist</h3>
+          <p class="para__text">Motion Studio</p>
+        </div>
+        <h4 class="heading-4">Dec, 2009 — Jan, 2013</h4>
+        <p class="para__text">
+          Revamped web application security applications, minimizing hacker
+          attacks from 2.3% to 0.02%.
+        </p>
+      </div>
+    </div>
+
+    <div class="learn" id="education">
+      <div class="learns">
+        <h2 class="heading-2 blue__dot">Education</h2>
+        <p class="para__text">
+          All my life I have been driven by my strong belief that education is
+          important. I try to learn something new every single day.
+        </p>
+      </div>
+      <div class="learns">
+        <img src="img/zig-zag.svg" alt="Zig-zag" class="zig__zag zig__zag-1" />
+      </div>
+    </div>
+    <div class="learn__details">
+      <div class="learn__company">
+        <div class="learn__head">
+          <h3 class="heading-3">Google Developer Training</h3>
+          <p class="para__text">Google</p>
+        </div>
+        <h4 class="heading-4">Apr, 2015 — May, 2015</h4>
+        <p class="para__text">
+          Learn to use App Engine, Google's Platform as a Service, to build the
+          backend for web apps that scale not only as your user base grows but
+          as request volumes peaks with sudden demand.
+        </p>
+      </div>
+      <div class="learn__company">
+        <div class="learn__head">
+          <h3 class="heading-3">Software Development</h3>
+          <p class="para__text">Boston University</p>
+        </div>
+        <h4 class="heading-4">Jan, 2005 — May, 2009</h4>
+        <p class="para__text">
+          BSc (Hons) in Software Development. Outstanding Academic Achievement
+          Award.
+        </p>
+      </div>
+    </div>
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading-2 mb-medium blue__dot">Portfolio</h2>
+      <ul class="portfolio__menu mb-largest">
+        <li class="portfolio__item">
+          <a href="#" class="portfolio__link">All Project</a>
+        </li>
+        <li class="portfolio__item">
+          <a href="#" class="portfolio__link">Web sometimes</a>
+        </li>
+        <li class="portfolio__item">
+          <a href="#" class="portfolio__link">UI/UX Design</a>
+        </li>
+        <li class="portfolio__item">
+          <a href="#" class="portfolio__link">frontend</a>
+        </li>
+      </ul>
+      <div class="portfolio__projects">
+        <div class="portfolio__project">
+          <div class="portfolio__img-container">
+            <img
+              src="img/project-1.jpg"
+              alt="project image"
+              class="portfolio__img"
+            />
+          </div>
+          <h3 class="heading-3 portfolio__img-title">
+            Shop web app &ldquo;Patty&rdquo;
+          </h3>
+          <p class="para__text">April, 2017</p>
+        </div>
+        <div class="portfolio__project">
+          <div class="portfolio__img-container">
+            <img
+              src="img/project-2.jpg"
+              alt="project image"
+              class="portfolio__img"
+            />
+          </div>
+
+          <h3 class="heading-3 portfolio__img-title">
+            Startup website &ldquo;Phoenix&rdquo;
+          </h3>
+          <p class="para__text">April, 2017</p>
+        </div>
+        <div class="portfolio__project">
+          <div class="portfolio__img-container">
+            <img
+              src="img/project-3.jpg"
+              alt="project image"
+              class="portfolio__img"
+            />
+          </div>
+
+          <h3 class="heading-3 portfolio__img-title">
+            Startup website &ldquo;Phoenix&rdquo;
+          </h3>
+          <p class="para__text">April, 2017</p>
+        </div>
+        <div class="portfolio__project">
+          <div class="portfolio__img-container">
+            <img
+              src="img/project-4.jpg"
+              alt="project image"
+              class="portfolio__img"
+            />
+          </div>
+
+          <h3 class="heading-3 portfolio__img-title">
+            Startup website &ldquo;Phoenix&rdquo;
+          </h3>
+          <p class="para__text">April, 2017</p>
+        </div>
+        <div class="portfolio__project">
+          <div class="portfolio__img-container">
+            <img
+              src="img/project-5.jpg"
+              alt="project image"
+              class="portfolio__img"
+            />
+          </div>
+
+          <h3 class="heading-3 portfolio__img-title">
+            Startup website &ldquo;Phoenix&rdquo;
+          </h3>
+          <p class="para__text">April, 2017</p>
+        </div>
+      </div>
+    </section>
+    <div class="feedback" id="feedback">
+      <div class="feedbacks">
+        <h2 class="heading-2 blue__dot">Feedback</h2>
+        <p class="para__text">
+          Take a look at the reviews of my customers and ensure the quality of
+          my services.
+        </p>
+      </div>
+      <div class="feedbacks">
+        <img src="img/zig-zag.svg" alt="Zig-zag" class="zig__zag zig__zag-1" />
+      </div>
+    </div>
+    <div class="feedback__details">
+      <div class="feedback__user">
+        <img src="img/feedback-1.jpg" alt="Photo" class="feedback__img" />
+        <div class="feedback__user-details">
+          <div class="feedback__heading mb-small">
+            <h3 class="heading-3">Stacey Don</h3>
+            <p class="para__text">President @ Coolor Studio</p>
+          </div>
+
+          <p class="para__text">
+            &ldquo; Considers problems as a challenge and enjoys finding
+            creative yet appropriate solutions. Danny is able to work out his
+            own solutions, but also works well with a group to solve problems.
+            Performs most jobs well and has the habit of checking work outcomes.
+            Danny is achieving excellence in some areas but in others is not yet
+            achieving the highest standards.&rdquo;
+          </p>
+        </div>
+      </div>
+      <div class="feedback__user">
+        <img src="img/feedback-2.jpg" alt="Photo" class="feedback__img" />
+
+        <div class="feedback__user-details">
+          <div class="feedback__heading mb-small">
+            <h3 class="heading-3">Anson Shura</h3>
+            <p class="para__text">Project Manager @ Motion Studio</p>
+          </div>
+
+          <p class="para__text">
+            &ldquo; He will always try to do what is required, even if it means
+            performing tasks that are not in the job description or if required
+            to do extra work unexpectedly. However, may sometimes complain about
+            the extra load. Aiming for a top job in the organization. He sets
+            very high standards, aware that this will bring attention and
+            promotion.&rdquo;
+          </p>
+        </div>
+      </div>
+      <div class="feedback__user">
+        <img src="img/feedback-3.jpg" alt="Photo" class="feedback__img" />
+
+        <div class="feedback__user-details">
+          <div class="feedback__heading mb-small">
+            <h3 class="heading-3">Gaylord Jefferson</h3>
+            <p class="para__text">Developer @ Illskill Agency</p>
+          </div>
+          <p class="para__text">
+            &ldquo; When working to a firm but realistic deadline, Danny always
+            completes tasks to a high standard. Care and accuracy is obvious
+            even when put under pressure of time. Prepared to work all the extra
+            hours it takes to meet the deadline.&rdquo;
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="contacts" id="contact">
+      <h2 class="heading-2 blue__dot">Contact</h2>
+      <p class="para__text">
+        Are you working on something great? I would love to help make it happen!
+        Drop me a letter and start your project right now! Just do it.
+      </p>
+      <div class="contacts">
+        <img src="img/zig-zag.svg" alt="Zig-zag" class="zig__zag zig__zag-1" />
+      </div>
+    </div>
+    <div class="contact__info">
+      <form action="#">
+        <div class="form__group mb-medium__large">
+          <input type="text" placeholder="Name" class="contact__name" />
+        </div>
+        <div class="form__group">
+          <input type="email" placeholder="E-mail" class="contact__mail" />
+        </div>
+      </form>
+    </div>
+    <div class="contact__msg">
+      <form action="#">
+        <div class="form__group mb-medium">
+          <textarea
+            name="Message"
+            cols="30"
+            rows="5"
+            placeholder="Message"
+            class="contact__msg-text"
+          ></textarea>
+        </div>
+      </form>
+      <button class="btn cta btn__blue">Send message</button>
+    </div>
+   
+    <footer class="footer" id="footer">
+      <p class="copyright">Copyright 2017 Danny.</p>
+    </footer>
+  </body>
+</html>

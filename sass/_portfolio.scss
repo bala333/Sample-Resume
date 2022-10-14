@@ -1,0 +1,58 @@
+.portfolio {
+  @extend %grid-center;
+  padding: 4rem 0;
+  border-bottom: 1px solid $color-grey-light-1;
+
+  &__menu {
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, max-content));
+    grid-column-gap: 3rem;
+  }
+  &__link:link,
+  &__link:visited {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: $font-lato;
+    font-weight: 700;
+    color: $color-primary;
+    text-decoration: none;
+  }
+  &__link:hover,
+  &__link:active {
+    color: $color-secondary;
+    border-bottom: 1px solid $color-secondary;
+  }
+  &__projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-row-gap: 3rem;
+  }
+
+  &__img {
+    transition: all 0.2s;
+    cursor: pointer;
+    border-radius: 3px;
+    &-container {
+      overflow: hidden;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+    @media only screen and (max-width: $bp-large) {
+      width: 90%;
+    }
+    @media only screen and (max-width: $bp-medium-small) {
+      width: 100%;
+    }
+  }
+  &__img-title {
+    border-bottom: 1px solid transparent;
+    &:hover {
+      color: $color-secondary;
+      border-bottom: 1px solid $color-secondary;
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+//color
+
+$color-primary: #333;
+$color-secondary: #3333ff;
+
+$color-white: #fff;
+$color-grey-light-1: #efefef;
+$color-grey-light-2: #e3e3e3;
+
+$font-lato: 'Lato', sans-serif;
+$font-sans: sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+
+%grid-center {
+  grid-column: center-start/center-end;
+}
+
+$bp-large: 75em; //1200px
+$bp-largest: 68.75em; //1100px
+$bp-medium: 62.5em; //1000px
+$bp-medium-small: 56.25em; //900px
+%blue-dot {
+  content: '';
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #3333ff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: $font-sans;
+  line-height: 1.6;
+  font-weight: 400;
+  color: $color-primary;
+  scroll-behavior: smooth;
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+.containers {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(4rem, 1fr) [center-start] repeat(
+      10,
+      [col-start] minmax(min-content, 12rem) [col-end]
+    )
+    [center-end] minmax(4rem, 1fr) [full-end];
+}
+
+.zig-zag {
+  background-color: red;
+  -webkit-mask: url(../img/zig-zag.svg) no-repeat center;
+  mask: url(../img/zig-zag.svg) no-repeat center;
+}
+
+.zig__zag {
+  width: 10rem;
+  @media only screen and (max-width: $bp-medium-small) {
+    display: none;
+  }
+}
+
+.btn {
+  font-size: 1.4rem;
+
+  padding: 1.5rem 4rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  font-family: $font-lato;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    box-shadow: 1rem 1rem 2rem rgba(#000, 0.2);
+    transform: translateY(-0.2rem);
+  }
+  &__white {
+    background-color: $color-grey-light-2;
+    color: $color-primary;
+  }
+  &__blue {
+    background-color: $color-secondary;
+    color: $color-grey-light-1;
+  }
+}
+
+.blue__dot {
+  &::after {
+    @extend %blue-dot;
+  }
+}
+
+.mb-small {
+  margin-bottom: 0.5rem;
+}
+.mb-medium {
+  margin-bottom: 1rem;
+}
+.mb-medium__large {
+  margin-bottom: 2rem;
+}
+.mb-largest {
+  margin-bottom: 3rem;
+}
+.mb-large {
+  margin-bottom: 4rem;
+}

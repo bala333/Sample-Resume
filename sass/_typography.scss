@@ -1,0 +1,32 @@
+%font {
+  font-family: $font-lato;
+}
+
+.heading-1 {
+  @extend %font;
+  font-size: 4rem;
+}
+.heading-2 {
+  @extend %font;
+  font-size: 3rem;
+}
+.heading-3 {
+  @extend %font;
+  font-size: 1.8rem;
+}
+.heading-4 {
+  @extend %font;
+  font-size: 1.6rem;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.heading-5 {
+  @extend %font;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}

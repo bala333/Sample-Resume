@@ -1,0 +1,35 @@
+.learn {
+  @extend %grid-center;
+  grid-column: center-start/col-end 3;
+  padding: 4rem 0;
+  border-bottom: 1px solid $color-grey-light-2;
+  @media only screen and (max-width: $bp-medium-small) {
+    grid-column: center-start/center-end;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  &__details {
+    grid-column: col-start 4 / col-end 10;
+    padding: 4rem;
+    padding-left: 5.5rem;
+    padding-top: 2rem;
+    border-bottom: 1px solid $color-grey-light-2;
+    @media only screen and (max-width: $bp-medium-small) {
+      grid-column: center-start/center-end;
+      padding-left: 0;
+      padding: 2rem 0;
+    }
+  }
+  &__company {
+    padding: 2rem 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-grey-light-2;
+    }
+  }
+  &__head {
+    display: flex;
+    h3 {
+      margin-right: 1rem;
+    }
+  }
+}

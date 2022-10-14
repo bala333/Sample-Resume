@@ -1,0 +1,61 @@
+.header {
+  width: 100%;
+  grid-column: full-start/full-end;
+  // display: grid;
+  // grid-template-columns: repeat(12, 1fr);
+  // grid-template-rows: 8rem;
+  align-items: center;
+  border-bottom: 1px solid $color-grey-light-1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $color-white;
+  z-index: 500;
+  height: 7rem;
+  &__name {
+    grid-column: 1/6;
+    &::after {
+      @extend %blue-dot;
+    }
+  }
+  & > h2 {
+    margin-left: 7.4rem;
+  }
+}
+.menu {
+  grid-column: 6/13;
+  &__list {
+    display: inline-block;
+    margin-left: 2.7rem;
+  }
+  &__link:link,
+  &__link:visited {
+    color: $color-primary;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: $font-lato;
+    font-weight: 900;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 1.1rem;
+    }
+  }
+  &__link:hover,
+  &__link:active {
+    color: $color-secondary;
+    border-bottom: 1px solid $color-secondary;
+  }
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+  justify-content: end;
+  align-items: center;
+}
+.bg-light {
+  background-color: $color-grey-light-1 !important;
+}
+.container-fluid {
+  background-color: $color-grey-light-1 !important;
+}
